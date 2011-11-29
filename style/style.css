@@ -74,6 +74,12 @@ float:left;
 }
 
 
+.clients {
+margin-top:60px;
+}
+.clients h3 {
+color:white;
+}
 a.big {
 	font-family:"Regular";
 	font-size:18px;
@@ -167,4 +173,11 @@ input.error { border: 2px dotted red !important; }
 .rustgeverbestel .form-stacked input {border: solid #527b10 1px;
 padding:5px;
 color:#444;}
+
+
+blockquote {
+border:none;
+font-family:Arial;
+line-height:1.3em;
+}
 

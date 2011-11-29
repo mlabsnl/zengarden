@@ -1,0 +1,170 @@
+
+
+body.rustgever {
+background: #2f2e28 url('../images/background-rustgever.png') repeat-x;
+color:#6f9139;
+}
+body.rustgeverbestel{
+background: #6e9038 url('../images/background-rustgeverbestel.png') repeat-x;
+color:#6f9139;
+}
+.topbar {
+	background-image: url('../images/topbarcolours.png');
+	height:10px;
+}
+
+
+
+.hero {
+	padding-top:40px;
+}
+.heroinfo {
+	padding-top:40px;
+}
+ul.producten li {
+	margin-right:30px;
+}
+
+
+.sidebar-bestelling {
+background-color:#2f2e28;
+padding:10px;
+padding-top:20px;
+margin-top:30px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.sidebar-bestelling a,.sidebar-bestelling a:visited {
+color:#6f9139;
+text-decoration:underline;
+
+}
+.headline {
+
+	color:white;
+	font-size:20px;
+	padding-bottom:10px;
+}
+.headline1 {
+	font-family:"Regular";
+}
+.headline2 {
+	font-family:"Monobold";
+	font-size:34px;
+}
+.payoff {
+	font-family:"Regular";
+	color:white;
+	line-height:1.3em;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:18px;
+}
+.prijslabel {
+margin-right:20px;
+float:left;
+}
+.al {
+	font-family:"Regular";
+	color:white;
+	line-height:1.3em;
+	font-size:18px;
+	text-align:right;
+}
+
+
+a.big {
+	font-family:"Regular";
+	font-size:18px;
+}
+.infoblocks {
+	padding-top:50px;
+	
+}
+h3.kleur1 {
+color:#189d77;
+}
+h3.kleur2 {
+color:#de4c4d;
+
+}
+
+.producten li {
+color:#e9cc1b;
+font-family:"Regular";
+font-size:16px;
+}
+.producten li a {
+padding:0;
+color:#e9cc1b;
+}
+.infoblocks h3 {
+	
+	font-family:"Regular";
+	font-size:24px;
+}
+.infoblocks p {
+color:#eee;
+font-size:14px;
+}
+
+p.bestelrustgever {
+color:#fff;
+padding-top:5px;
+padding-bottom:5px;
+}
+.inf {
+color:white;
+padding-left:5px;
+}
+
+
+
+.form-stacked {
+padding-left:0;
+}
+.rustgeverbestel .form-stacked label {
+color:white !important;
+padding-bottom:4px;
+font-weight:normal;
+
+}
+select.error {
+	border: 1px dotted red;
+}
+.notyet {
+color:#444 !important;
+}
+label.error {
+	-webkit-border-radius: 4px;
+  	-moz-border-radius: 4px;
+  	border-radius: 4px;
+	width: auto;
+	background-color:red;
+	padding:5px;
+	padding-bottom:6px;
+padding-right:15px;
+	margin-left:10px;
+  background-color: #c43c35;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ee5f5b), to(#c43c35));
+  background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -ms-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ee5f5b), color-stop(100%, #c43c35));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: linear-gradient(top, #ee5f5b, #c43c35);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee5f5b', endColorstr='#c43c35', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #c43c35 #c43c35 #882a25;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+	display: inline;
+}
+input.error { border: 2px dotted red !important; }
+
+.rustgeverbestel .form-stacked input {border: solid #527b10 1px;
+padding:5px;
+color:#444;}
+

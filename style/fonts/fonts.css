@@ -1,0 +1,39 @@
+
+
+
+@font-face {
+    font-family: 'Regular';
+    src: url('interstate_cond_mono_-_lgt-webfont.eot');
+    src: url('interstate_cond_mono_-_lgt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('interstate_cond_mono_-_lgt-webfont.woff') format('woff'),
+         url('interstate_cond_mono_-_lgt-webfont.ttf') format('truetype'),
+         url('interstate_cond_mono_-_lgt-webfont.svg#InterstateCondMonoLgtRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Monobold';
+    src: url('interstate_cond_mono_bold-webfont.eot');
+    src: url('interstate_cond_mono_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('interstate_cond_mono_bold-webfont.woff') format('woff'),
+         url('interstate_cond_mono_bold-webfont.ttf') format('truetype'),
+         url('interstate_cond_mono_bold-webfont.svg#InterstateCondMonoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Monoregular';
+    src: url('interstate_cond_mono-webfont.eot');
+    src: url('interstate_cond_mono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('interstate_cond_mono-webfont.woff') format('woff'),
+         url('interstate_cond_mono-webfont.ttf') format('truetype'),
+         url('interstate_cond_mono-webfont.svg#InterstateCondMonoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

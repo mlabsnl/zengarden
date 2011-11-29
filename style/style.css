@@ -8,6 +8,17 @@ body.rustgeverbestel{
 background: #6e9038 url('../images/background-rustgeverbestel.png') repeat-x;
 color:#6f9139;
 }
+
+
+body.opkikker {
+background: #d3e6f2 url('../images/background-opkikker.png') repeat-x;
+color:#6f9139;
+}
+body.opkikkerbestel{
+background: #d3e6f2 url('../images/background-opkikkerbestel.png') repeat-x;
+color:#6f9139;
+}
+
 .topbar {
 	background-image: url('../images/topbarcolours.png');
 	height:10px;
@@ -96,14 +107,25 @@ color:#de4c4d;
 
 }
 
+
+
 .producten li {
 color:#e9cc1b;
 font-family:"Regular";
 font-size:16px;
 }
+
+
 .producten li a {
 padding:0;
 color:#e9cc1b;
+}
+
+.opkikker .producten li a {
+color:black;
+}
+.opkikker .producten li a:hover {
+color:#225d84;
 }
 .infoblocks h3 {
 	

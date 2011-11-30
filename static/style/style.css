@@ -37,6 +37,19 @@ ul.producten li {
 }
 
 
+
+.highlight {
+
+padding-top:5px;
+}
+.highlight-opkikker {
+background-color:#4c97ce;
+
+}
+.highlight-rustgever {
+background-color:#5ab8c6;
+}
+
 .sidebar-bestelling {
 background-color:#2f2e28;
 padding:10px;
@@ -203,3 +216,6 @@ font-family:Arial;
 line-height:1.3em;
 }
 
+.pill-content p {
+color:#444;
+}

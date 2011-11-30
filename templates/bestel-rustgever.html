@@ -25,6 +25,7 @@
 
 	 <script src="/static/js/bootstrap-twipsy.js"></script>
 	<script src="/static/js/bootstrap-popover.js"></script>
+	<script src="/static/js/bootstrap-tabs.js"></script>
 			<script src="/static/js/app.js"></script>
 				<script src="/static/js/bootstrap-modal.js"></script>
 
@@ -63,12 +64,12 @@
 					 <div class="payoff">Werkt kalmerend op je zenuwen, bij nervositeit en angst en helpt bij het ontspannen van je spieren. </div>
         	
 					<hr/>
-					<div class="al"><span class="prijslabel">Tijdelijk maar</span> 24,95</div>
-					<div class="al"><span class="prijslabel">Verzendkosten</span> 2.55</div>
+					<div class="al"><span class="prijslabel">Tijdelijk maar</span>&euro; 24,95</div>
+					<div class="al"><span class="prijslabel">Verzendkosten</span>&euro; 2.55</div>
 					<hr/>
-					<div class="al"><span class="prijslabel">Totaal</span><span id="totaalprijs"> 27.50</span></div>
+					<div class="al"><span class="prijslabel">Totaal</span>&euro;<span id="totaalprijs"> 27.50</span></div>
 					<br/>
-					<smaller><a data-controls-modal="voorwaarden" data-backdrop="static" href="#">Leveringsvoorwaarden</a> van toepassing</smaller>
+					<smaller>De volgende <a data-controls-modal="voorwaarden" data-backdrop="static" href="#">Leveringsvoorwaarden</a> zijn van toepassing op elke bestelling</smaller>
 				</div>
 				<div id="voorwaarden" class="modal hide fade">
 				            <div class="modal-header">
@@ -76,11 +77,50 @@
 				              <h3>Algemene voorwaarden voor levering</h3>
 				            </div>
 				            <div class="modal-body">
-				              <p>One fine body…</p>
+				            
+				            	<ul class="tabs">
+								  <li class="active"><a href="#alg">Algemeen</a></li>
+								  <li><a href="#pro">Producten</a></li>
+								  <li><a href="#bes">Bestelling</a></li>
+								  <li><a href="#lev">Levering</a></li>
+								<li><a href="#ter">Retourneren</a></li>
+								</ul>
+
+								<div class="pill-content">
+								  <div class="active" id="alg"><p>	In deze algemene voorwaarden worden de hiernavolgende termen in de navolgende betekenis gebruikt, tenzij uitdrukkelijk anders is aangegeven. <br/>
+									- Zen Gardens: de bepaler van deze algemene voorwaarden.<br/>
+									- De klant: een wederpartij die een natuurlijke persoon is. <br/>
+									- Deze voorwaarden gelden voor iedere aanbieding, offerte en overeenkomst tussen Zen Gardens en de klant waarop Zen Garden deze voorwaarden van toepassing heeft verklaard, voor zover van deze voorwaarden niet door partijen uitdrukkelijk en schriftelijk is afgeweken. 
+									</p>
+									<p>De onderhavige voorwaarden zijn eveneens van toepassing op overeenkomsten met Zen Gardens, voor de uitvoering waarvan derden dienen te worden betrokken.</p>
+									
+									<p>Eventuele afwijkingen op deze algemene voorwaarden zijn slechts geldig indien deze uitdrukkelijk schriftelijk zijn overeengekomen.</p></div>
+								  <div id="pro"><p>De aangeboden produkten en of artikelen  worden zo duidelijk en waarheidsgetrouw mogelijk beschreven 
+									en soms afgebeeld op de website en/of in schriftelijke aanbiedingen en bezitten de eigenschappen die door Zen Gardens in het aanbod worden genoemd. 
+									</p>
+									<p>Afbeeldingen kunnen soms afwijken van de werkelijkheid.</p>
+									<p>Dit is een homeopatisch product- de werking hiervan is verschillend van persoon tot persoon maar in het algemeen kan
+										verwacht worden dat de uitwerking van het product zoals omschreven zal zijn. Maar Zen Gardens kan hier geen garantie op geven</p>
+									<p>Op de website wordt duidelijk aangegeven wat de klant bij aankoop verschuldigd is en wat zijn rechten en verplichtingen zijn, indien men op het aanbod ingaat.</p></div>
+								  <div id="bes"><p>Zen Gardens levert pas uit na ontvangst van betaling. Ongeacht de door de klant bij bestelling gekozen wijze van betalen, behoudt Zen Gardens
+									zich het recht (Bij enig twijfel over legitimiteit bijvoorbeeld) voor om bestellingen niet uit te voeren of op een later tijdstip uit te voeren.</p></div>
+								  <div id="lev"><p>
+								  	Zen Gardens doet haar uiterste best om de bestellingen zo spoedig mogelijk uit te leveren. De gemiddelde levertijd bedraagt drie dagen (Dit is indicatief). Indien de levering vertraging oploopt -hetzij door tijdelijk niet in voorraad zijn, hetzij om anderen redenen-
+								    of indien een bestelling niet of slechts gedeeltelijk kan worden uitgevoerd, zal de klant tijdig bericht ontvangen.
+								  </p></div>
+								 <div id="ter"><p>
+								  	Bij elke bestelling is de wet Kopen op Afstand van toepassing. <a href="http://www.consuwijzer.nl/Consumententhema_s/Kopen_op_afstand" target="_blank">Lees hier meer</a></p>
+								<p>In het kort betekent dit dat u 7 dagen zichttermijn heeft. Let wel op: Zen Gardens betaald het bedrag pas terug wanneer er een volledig (niet geconsumeerd) product geretourneerd word.</p>
+								    <p></p>
+								  </p></div>
+								</div>
+				           
+							
+							
 				            </div>
 				            <div class="modal-footer">
 				              
-				              <a id="sluitvoorwaarden" href="#" class="btn primary">Sluit voorwaarden</a>
+				              <a id="sluitvoorwaarden" href="#" class="btn regular">Sluit voorwaarden</a>
 				            </div>
 				 </div>
         	</div>
@@ -89,7 +129,7 @@
 			<div class="headline headline2">Bestelformulier</div>
 			 
 			 <p class="bestelrustgever">Bestel veilig en snel Rustgever. Elk pakje Rustgever bevat 50 capsules van hoge kwaliteit Passiebloem extract. Vul het
-				onderstaande formulier in en ga vervolgens naar de beveiligde betaalomgeving van Ideal.</p>
+				onderstaande formulier in en ga vervolgens naar de beveiligde betaalomgeving van Ideal. <strong>Lees voor gebruik eerst de instructies op het etiket.</strong></p>
 			 <form id="bestelformulier" name="bestelformulier" class="form-stacked">
 			        <fieldset>
 			         
@@ -161,6 +201,7 @@
   <![endif]-->
 <script>
 	$('#voorwaarden').modal(true)
+	$('.tabs').tabs()
 </script>
   </body>
 </html>

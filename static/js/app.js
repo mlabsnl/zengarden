@@ -89,7 +89,7 @@ jQuery.extend(jQuery.validator.messages, {
 						$("#totaalprijs").html( totaalprijs.toFixed(2))
 
 						if ($("#bestelformulier").valid() ) {
-						   // todo:fix
+						   	$("a#bestelknop").removeClass("disabled").attr("href",mUrl)
 
 						} else {
 							$("a#bestelknop").addClass("disabled").attr("href","#")
@@ -100,10 +100,7 @@ jQuery.extend(jQuery.validator.messages, {
 				$("#bestelformulier input").blur(function() {
 					
 					validateform();
-					
-				
-					
-				
+
 				})
 			
 				function mUrl()
@@ -115,19 +112,15 @@ jQuery.extend(jQuery.validator.messages, {
 
 						url = "/pay/"+amount
 						var r;
-						$.ajax({
+						var r = $.ajax({
 							url: url,
-							cache: false,
-							success: function(html)
-							{
-								$("a#bestelknop").removeClass("disabled").attr("href",html)
-							}
-						});
+							async: false
+							}).responseText;
+						}
+						return r;
 					}
-					return r;
-				}
 		
-		
+				
 				$("#sluitvoorwaarden").click(function() {
 					$('#voorwaarden').modal('hide')
 				})

@@ -108,17 +108,20 @@ jQuery.extend(jQuery.validator.messages, {
 			
 				function mUrl() {
 					url="";
+					redirect = "";
 					if ($("#bestelformulier").valid() ) {
 					amount = parseInt(totaalprijs*100)
-					description = "Zen Garden Rustgever(tm)"
-					profilekey = "e510805f" //cowala
-					
+				    
 									
-					url = "https://secure.mollie.nl/xml/ideal?a=create-link&partnerid=705747&amount="+amount+"&description="+description+"&profile_key=" + profilekey
+					url = "/pay/"+amount
+						$.get(url, function(data){
+							redirect = data
+						});
 
 				    }
 				
-					return url
+				
+					return redirect
 				}
 		
 		

@@ -1,26 +1,26 @@
 
 
 body.rustgever {
-background: #2f2e28 url('../images/background-rustgever.png') repeat-x;
+background: #2f2e28 url('/static/images/background-rustgever.png') repeat-x;
 color:#6f9139;
 }
 body.rustgeverbestel{
-background: #6e9038 url('../images/background-rustgeverbestel.png') repeat-x;
+background: #6e9038 url('/static/images/background-rustgeverbestel.png') repeat-x;
 color:#6f9139;
 }
 
 
 body.opkikker {
-background: #d3e6f2 url('../images/background-opkikker.png') repeat-x;
+background: #d3e6f2 url('/static/images/background-opkikker.png') repeat-x;
 color:#6f9139;
 }
 body.opkikkerbestel{
-background: #d3e6f2 url('../images/background-opkikkerbestel.png') repeat-x;
+background: #d3e6f2 url('/static/images/background-opkikkerbestel.png') repeat-x;
 color:#6f9139;
 }
 
 .topbar {
-	background-image: url('../images/topbarcolours.png');
+	background-image: url('/static/images/topbarcolours.png');
 	height:10px;
 }
 

@@ -12,23 +12,23 @@
     <![endif]-->
 
     <!-- Le styles -->
-	<link href="style/fonts/fonts.css" rel="stylesheet">
-    <link href="style/bootstrap.css" rel="stylesheet">
-    <link href="style/style.css" rel="stylesheet">
+	<link href="/static/style/fonts/fonts.css" rel="stylesheet">
+    <link href="/static/style/bootstrap.css" rel="stylesheet">
+    <link href="/static/style/style.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 40px;
       }
     </style>
 	<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
-	 <script src="js/bootstrap-twipsy.js"></script>
-	<script src="js/bootstrap-popover.js"></script>
+	 <script src="/static/js/bootstrap-twipsy.js"></script>
+	<script src="/static/js/bootstrap-popover.js"></script>
 
     <!-- Le fav and touch icons 
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/apple-touch-icon-114x114.png">
 	-->
   </head>
 
@@ -42,23 +42,23 @@
       
 		<div class="row">
       		<div class="span6"> 
-				<img src="images/zengardenlogo.png" width="116" height="25" alt="Zengardenlogo">
+				<img src="/static/images/zengardenlogo.png" width="116" height="25" alt="Zengardenlogo">
 			</div>
 			<div class="span5 offset5">
 				<ul class="nav producten opkikker" style="margin-top:5px;">
-					<li><a href="rustgever.html">Rustgever</a></li><li> </li><li><a href="opkikker.html">Opkikkers</a></li></ul>
+					<li><a href="/rustgever">Rustgever</a></li><li> </li><li><a href="/opkikker">Opkikkers</a></li></ul>
 			</div>
       	</div>
         
         <div class="row hero">
         	<div class="span5">
-        		<img src="images/herovisualopkikker.png" width="288" height="433" alt="Herovisualrustgever">
+        		<img src="/static/images/herovisualopkikker.png" width="288" height="433" alt="Herovisualrustgever">
         	</div>
 			<div class="span10 heroinfo offset1">
 			 <div class="headline headline1">100% NATUURLIJK</div>
 			 <div class="headline headline2">EXTRA KRACHTIG</div>
-			 <div class="line"><img src="images/whiteline.png" width="522" height="2" alt="Whiteline"></div>
-			 <div class="product"><img src="images/logo-opkikkers.png"  alt="Logo Rustgever"></div>
+			 <div class="line"><img src="/static/images/whiteline.png" width="522" height="2" alt="Whiteline"></div>
+			 <div class="product"><img src="/static/images/logo-opkikkers.png"  alt="Logo Rustgever"></div>
 			 <div class="payoff">
 			Guarana wordt al eeuwenlang gebruikt door indianen uit de Amazone vanwegen de hoge energie afgifte van de zaden.
 			Guarana zaden bevatten van nature cafeineen en wordt oa. gebruikt om de concentratie en gemoedstoestand te verbeteren. 
@@ -73,10 +73,10 @@
 
 
 
-				                                        <form id="email" action="." method="POST">
-				                                            <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='ed497e101c5869ac69f50d71983856a8' /></div>
-				                                            <input class="span6" name="email" id="id_email" type="text" placeholder="Blijf op de hoogte, laat je email adres achter." /> <a class="btn primary submit" href="#">Aanmelden &raquo;</a>
-				                                        </form>
+				                                    <form id="email" action="." method="POST">
+													                                            {% csrf_token %}
+													                                            <input class="span6" name="email" id="id_email" type="text" placeholder="{% if succes %}Dank je wel je hoort snel van ons!{% else %}Blijf op de hoogte, laat je email adres achter.{% endif %}" /> <a class="btn primary submit" href="#">Aanmelden &raquo;</a>
+													                                        </form>
 
 
 										</div></p>
@@ -91,7 +91,11 @@
      
 
     </div> <!-- /container -->
-
+	<script>
+	$(".submit").click(function() {
+                              $('#email').submit()
+                   })
+	</script>
 
   <!--[if lt IE 7 ]>
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>

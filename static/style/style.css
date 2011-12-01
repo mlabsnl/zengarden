@@ -41,6 +41,7 @@ ul.producten li {
 .highlight {
 	padding-top:3px;
 	padding-bottom:3px;
+	padding:3px;
 }
 .highlight-opkikker {
 	background-color:#4c97ce;

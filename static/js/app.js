@@ -55,26 +55,26 @@ jQuery.extend(jQuery.validator.messages, {
 				function validateform() {
 					$("#bestelformulier").validate({
 					  rules: {
-					    aantal: {
+					    product_amount: {
 					      digits: true,
 					      min: 1
 					    },
-						fldnaam: {
+						customer_name: {
 							required: true
 						},
-						fldstraat: {
+						customer_street: {
 							required: true
 						},
-						fldnummer: {
+						customer_number: {
 							required: true
 						},
-						fldposcode: {
+						customer_zipcode: {
 							required: true
 						},
-						fldwoonplaats: {
+						customer_city: {
 							required: true
 						},
-						fldemail: {
+						customer_email: {
 							required: true,
 							email: true	
 						}
@@ -83,13 +83,13 @@ jQuery.extend(jQuery.validator.messages, {
 					  }
 					});
 					
-						aantal = parseFloat($("#aantal").val())
+						aantal = parseFloat($("#id_product_amount").val())
 						origineleprijs = (aantal * prijsRustgever) + prijsVerzendkosten;
 						totaalprijs = Math.round( origineleprijs *100)/100
 						$("#totaalprijs").html( totaalprijs.toFixed(2))
 
 						if ($("#bestelformulier").valid() ) {
-						   	$("a#bestelknop").removeClass("disabled").attr("href",mUrl)
+						   	$("a#bestelknop").removeClass("disabled").attr("href","#")
 
 						} else {
 							$("a#bestelknop").addClass("disabled").attr("href","#")
@@ -102,28 +102,15 @@ jQuery.extend(jQuery.validator.messages, {
 					validateform();
 
 				})
-			
-				function mUrl()
-				{
-					url="";
-					if ($("#bestelformulier").valid())
-					{
-						amount = parseInt(totaalprijs*100)
-
-						url = "/pay/"+amount
-						var r;
-						var r = $.ajax({
-							url: url,
-							async: false
-							}).responseText;
-						}
-						return r;
-					}
 		
 				
 				$("#sluitvoorwaarden").click(function() {
 					$('#voorwaarden').modal('hide')
 				})
+
+                $("#bestelknop").click(function(){
+                    $('#bestelformulier').submit()
+                })
 
             })
          

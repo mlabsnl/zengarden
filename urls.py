@@ -10,9 +10,9 @@ urlpatterns = patterns('',
     )
 
 urlpatterns += patterns('',
+     url(r'^admin/', include(admin.site.urls)),
     (r'^$','shop.views.index'),
 	(r'^rustgever','shop.views.rustgever'),
 	(r'^opkikker','shop.views.opkikker'),
 	(r'^bestel', 'shop.views.order'),
-	(r'^pay/(?P<amount>[0-9]+)', 'shop.views.pay')
 )

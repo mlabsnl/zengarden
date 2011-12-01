@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f190f002-e3f8-4052-935d-bb7650eec59f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shop/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/herovisualopkikker.png" afterPath="$PROJECT_DIR$/static/images/herovisualopkikker.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/email.db" afterPath="$PROJECT_DIR$/email.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/models.py" afterPath="$PROJECT_DIR$/shop/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/views.py" afterPath="$PROJECT_DIR$/shop/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/app.js" afterPath="$PROJECT_DIR$/static/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/bestel-rustgever.html" afterPath="$PROJECT_DIR$/templates/bestel-rustgever.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/opkikker.html" afterPath="$PROJECT_DIR$/templates/opkikker.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
     </list>
     <ignored path="zengarden2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +68,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="52" selection-start="383" selection-end="383" vertical-scroll-proportion="0.25553662">
+            <state line="36" column="34" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.43781942">
               <folding />
             </state>
           </provider>
@@ -476,7 +485,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shop/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="52" selection-start="383" selection-end="383" vertical-scroll-proportion="0.25553662">
+        <state line="36" column="34" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.43781942">
           <folding />
         </state>
       </provider>

@@ -30,6 +30,19 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/static/apple-touch-icon-114x114.png">
 	-->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-62126-76']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
   </head>
 
   <body class="opkikker">
@@ -52,7 +65,7 @@
         
         <div class="row hero">
         	<div class="span5">
-        		<img src="/static/images/herovisualopkikker.png"  alt="Herovisualrustgever">
+        		<img style="padding-top:40px;" src="/static/images/herovisualopkikker.png"  alt="Herovisualrustgever">
         	</div>
 			<div class="span10 heroinfo offset1">
 			 <div class="headline headline1">100% NATUURLIJK</div>
@@ -75,7 +88,7 @@
 
 				                                    <form id="email" action="/opkikker" method="POST">
 													                                            {% csrf_token %}
-													                                            <input class="span6" name="email" id="id_email" type="text" placeholder="{% if succes %}Dank je wel je hoort snel van ons!{% else %}Blijf op de hoogte, laat je email adres achter.{% endif %}" /> <a class="btn primary submit" href="#">Aanmelden &raquo;</a>
+													                                            {% if succes %}<span style="color:white;position:relative;top:7px;">Bedankt voor de interesse in Opkikkers, wij houden je op de hoogte!</span>{% else %}<input class="span6" name="email" id="id_email" type="text" placeholder="Blijf op de hoogte en laat je email adres achter." /> <a class="btn primary submit" href="#">Aanmelden &raquo;</a>{% endif %}
 													                                        </form>
 
 

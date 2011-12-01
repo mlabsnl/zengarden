@@ -39,25 +39,25 @@ ul.producten li {
 
 
 .highlight {
-
-padding-top:5px;
+	padding-top:3px;
+	padding-bottom:3px;
 }
 .highlight-opkikker {
-background-color:#4c97ce;
+	background-color:#4c97ce;
 
 }
 .highlight-rustgever {
-background-color:#5ab8c6;
+	background-color:#5ab8c6;
 }
 
 .sidebar-bestelling {
-background-color:#2f2e28;
-padding:10px;
-padding-top:20px;
-margin-top:30px;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
+	background-color:#2f2e28;
+	padding:10px;
+	padding-top:20px;
+	margin-top:30px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 .sidebar-bestelling a,.sidebar-bestelling a:visited {
 color:#6f9139;
@@ -218,4 +218,10 @@ line-height:1.3em;
 
 .pill-content p {
 color:#444;
+}
+
+.bedankt {
+	border:none;
+	color:white;
+	background:#045f86 !important;
 }

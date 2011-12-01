@@ -8,7 +8,7 @@ from xml.dom import minidom
 
 def index(request):
     print request.META['HTTP_HOST']
-    if request.META['HTTP_HOST'] == 'localhost:8000':
+    if request.META['HTTP_HOST'] == 'www.opkikker.nl':
         return HttpResponseRedirect('/opkikker')
     else:
         return HttpResponseRedirect('/rustgever')
